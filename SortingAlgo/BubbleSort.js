@@ -9,6 +9,7 @@ for (let i = 0; i < arr.length; i++) {
             console.log("j = ", j, arr);
         }
     }
+    //optimized by using a swapped flag if no swapping takes place means already sorted
     if (!isSwapped) {
         break;
     }
