@@ -10,3 +10,5 @@
 ### 2) Selection Sort
 ![image](https://user-images.githubusercontent.com/49062060/219667047-e3f8528d-3c2a-4270-aee2-d3ba740ccbf4.png)
 
+### 3) Insertion Sort
+![image](https://user-images.githubusercontent.com/49062060/219696440-afb4a72e-36e0-4677-8c6b-9868f0b119fd.png)
