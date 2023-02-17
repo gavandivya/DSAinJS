@@ -16,4 +16,6 @@
 
 ## Searching Algorithms
 
+### 1) Linear Search
+
 ![image](https://user-images.githubusercontent.com/49062060/219708798-54e0075f-8626-4328-989c-9fbde913bfa8.png)
