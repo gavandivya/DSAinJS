@@ -3,7 +3,6 @@ console.log("Original Array - ", arr);
 //Finding max in unsorted array and replacing it with last
 const findMax = (last) => {
     let max = 0;
-    let isSwapped = false;
     for (let i = 0; i <= last; i++) {
         if (arr[i] > arr[max]) {
             max = i;
