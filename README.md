@@ -1,9 +1,12 @@
 ## Soring Algorithms
 
 
-### Bubble Sort
+### 1) Bubble Sort
 ![image](https://user-images.githubusercontent.com/49062060/219481313-0230c383-da2d-4b42-a623-1a88b7b82b71.png)
 
 ### Optimized Bubble Sort
 ![image](https://user-images.githubusercontent.com/49062060/219481017-49daaee4-43b0-4e33-bb15-342bab9d8934.png)
+
+### 2) Selection Sort
+![image](https://user-images.githubusercontent.com/49062060/219667047-e3f8528d-3c2a-4270-aee2-d3ba740ccbf4.png)
 
