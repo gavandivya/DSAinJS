@@ -11,7 +11,7 @@ function LinearSearch() {
     }
 
     if (!isPresent) {
-        console.log("Element Not Prsent in Array");
+        console.log("Element Not Present in Array");
     }
 }
 
