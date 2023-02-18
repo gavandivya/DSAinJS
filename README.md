@@ -27,3 +27,5 @@
 
 ![image](https://user-images.githubusercontent.com/49062060/219845309-1033cb50-2e80-44ec-854d-c2033276d538.png)
 
+If Element not found then max comparisions it does is
+![image](https://user-images.githubusercontent.com/49062060/219845553-cf90495e-e6ac-492e-b5c7-d75455a1e09d.png)
