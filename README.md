@@ -1,7 +1,7 @@
 ### Searching Algorithm
-1) Linear search
+1) [Linear search](https://github.com/gavandivya/DSAinJS/blob/main/SearchingAlgo/LinearSearch.js)
 
-2) Binary search
+2) [Binary search](https://github.com/gavandivya/DSAinJS/blob/main/SearchingAlgo/BinarySearch.js)
 
 ### Sorting Algorithm
 
