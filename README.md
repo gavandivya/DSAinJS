@@ -5,10 +5,10 @@
 
 ### Sorting Algorithm
 
-1) Bubble Sort
+1) [Bubble Sort](https://github.com/gavandivya/DSAinJS/tree/main/SortingAlgo)
 
-2) Insertion Sort
+2) [Insertion Sort](https://github.com/gavandivya/DSAinJS/tree/main/SortingAlgo)
 
-3) Selection Sort
+3) [Selection Sort](https://github.com/gavandivya/DSAinJS/tree/main/SortingAlgo)
 
 ### Patterns
