@@ -265,7 +265,7 @@ function pattern11(n) {
  */
 
 
-function pattern32(n) {
+function pattern40(n) {
     for (let row = 1; row <= n; row++) {
         for (let col = 1; col <= n; col++) {
             string += row;
@@ -284,7 +284,7 @@ function pattern32(n) {
  * 
  */
 
-function pattern33(n) {
+function pattern41(n) {
     for (let row = 1; row <= n; row++) {
         for (let col = 1; col <= n; col++) {
             string += col;
