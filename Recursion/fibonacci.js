@@ -1,5 +1,7 @@
-let num = 10;
+let num = 8;
 
+
+// Fibo for nth number
 function fibo(n) {
     if (n < 2) {
         return n;
@@ -7,10 +9,11 @@ function fibo(n) {
     return fibo(n - 1) + fibo(n - 2);
 }
 
-// console.log(fibo(num));
+console.log(fibo(num));
 
+
+// Fibo for numbers
 let n1 = 0; let n2 = 1; let n3 = 0;
-
 
 function nFibo(n) {
     if (n > 0) {
