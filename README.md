@@ -12,3 +12,5 @@
 3) [Selection Sort](https://github.com/gavandivya/DSAinJS/tree/main/SortingAlgo)
 
 ### Patterns
+
+### Recursion
