@@ -4,12 +4,13 @@
 let str = "DIVYA CAN DO IT";
 const toLowerCase = () => str.toLowerCase();
 console.log(toLowerCase());
-//Output  - DIVYA CAN DO IT
+//Output  - divya can do it
+
 
 //Converting the first character of the string to lowercase
 const firstLetterLowerCase = () => str.slice(0, 1).toLowerCase() + str.slice(1, str.length);
 console.log(firstLetterLowerCase());
-//Output  - Divya can do it
+//Output  - dIVYA CAN DO IT
 
 //Converting only required characters to lowercase without using .toLowerCase();
 const arr = ['A', 'E', 'I', 'O', 'U'];
@@ -27,7 +28,7 @@ const requiredCharacters = () => {
     return temp;
 }
 console.log(requiredCharacters());
-//Output  - DIVYA CAN DO IT
+//Output  - divya can do it
 
 //Using array to make string lowercase using charCodeAt()
 const usingCharCodeAt = () => {
@@ -46,4 +47,4 @@ const usingCharCodeAt = () => {
 }
 
 console.log(usingCharCodeAt());
-//Output  - A(B)CDEF{1}G2HI3GK%!78L
+//Output  - a(b)cdef{1}g2hi3gk%!78l
