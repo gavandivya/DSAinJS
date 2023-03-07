@@ -156,3 +156,52 @@ function randomRange(myMin, myMax) {
     let floor = Math.floor(multiply)
     return floor + myMin;
 }
+
+
+//doubt
+
+// Only change code below this line
+/**
+countdown(-1) should return an empty array.
+Failed:countdown(10) should return [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Failed:countdown(5) should return [5, 4, 3, 2, 1]
+ */
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    }
+    else {
+        const newArray = countdown(n - 1)
+        newArray.unshift(n);
+        return newArray;
+    }
+}
+
+/**
+ * 
+rangeOfNumbers(1, 5) should return [1, 2, 3, 4, 5].
+Passed:rangeOfNumbers(6, 9) should return [6, 7, 8, 9].
+Passed:rangeOfNumbers(4, 4) should return [4].
+ */
+function rangeOfNumbers(startNum, endNum) {
+
+    if (startNum > endNum) {
+        return [];
+    }
+    else {
+        const array = rangeOfNumbers(startNum + 1, endNum)
+        array.unshift(startNum);
+        return array;
+    }
+
+}
+
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum < startNum) {
+        return [];
+    } else {
+        const numbers = rangeOfNumbers(startNum, endNum - 1);
+        numbers.push(endNum);
+        return numbers;
+    }
+}
