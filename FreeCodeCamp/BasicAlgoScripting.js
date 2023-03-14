@@ -27,22 +27,23 @@ function reverseString(str) {
 }
 
 
+
 //Factorialize a Number
-
-function factorialize(num) {
-    if (num <= 1) {
-        return 1;
-    }
-    return num * factorialize(num - 1);
-}
-
-//head recursion
 function factorialize(num) {
     let factorial = 1;
     for (let i = 1; i <= num; i++) {
         factorial = factorial * i;
     }
     return factorial;
+}
+
+//head recursion
+
+function factorialize(num) {
+    if (num <= 1) {
+        return 1;
+    }
+    return num * factorialize(num - 1);
 }
 
 //tail recursion to optimize the the memory use.
