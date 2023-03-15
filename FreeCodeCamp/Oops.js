@@ -66,3 +66,9 @@ for (let property in duck) {
 
 console.log(ownProps);
 console.log(prototypeProps);
+
+
+/**
+Understand the Constructor Property
+There is a special constructor property located on the object instances duck and beagle that were created in the previous challenges:
+ */
