@@ -50,8 +50,8 @@ function updateRecords(records, id, prop, value) {
     else {
         delete records[id][prop];
     }
-
     return records;
+
 }
 
 updateRecords(recordCollection, 5439, 'tracks', 'ABBA');
