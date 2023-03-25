@@ -51,7 +51,7 @@ function diffArray(arr1, arr2) {
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 /**
- * Passed:diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) should return an array.
+Passed:diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) should return an array.
 Passed:["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] should return ["pink wool"].
 Passed:["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] should return an array with one item.
 Passed:["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] should return ["diorite", "pink wool"].
@@ -93,3 +93,111 @@ function destroyer(arr) {
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
+
+/**
+Spinal Tap Case
+Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+ */
+
+function spinalCase(str) {
+    console.log(str.toLowerCase().split(" ").join("-"))
+    return str.split(/\s|_|(?=[A-Z])/).join("-").toLowerCase();
+}
+
+spinalCase('This Is Spinal Tap');
+spinalCase("The_Andy_Griffith_Show");
+
+/**
+Passed:spinalCase("This Is Spinal Tap") should return the string this-is-spinal-tap.
+Passed:spinalCase("thisIsSpinalTap") should return the string this-is-spinal-tap.
+Passed:spinalCase("The_Andy_Griffith_Show") should return the string the-andy-griffith-show.
+Passed:spinalCase("Teletubbies say Eh-oh") should return the string teletubbies-say-eh-oh.
+Passed:spinalCase("AllThe-small Things") should return the string all-the-small-things.
+ */
+
+// Wherefore art thou
+// Pig Latin
+// Search and Replace
+
+function myReplace(str, before, after) {
+    if (before.split('')[0] == before.slice(0, 1).toUpperCase()) {
+        after = after.slice(0, 1).toUpperCase() + after.slice(1)
+    }
+    else {
+        after = after.slice(0, 1).toLowerCase() + after.slice(1)
+    }
+
+    return str.replace(before, after);
+}
+
+
+function myReplace(str, before, after) {
+    var index = str.indexOf(before);
+    if (str[index] === str[index].toUpperCase()) {
+        after = after.charAt(0).toUpperCase() + after.slice(1);
+    } else {
+        after = after.charAt(0).toLowerCase() + after.slice(1);
+    }
+    str = str.replace(before, after);
+
+    return str;
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+// DNA Pairing
+
+// Missing letters
+
+/**Find the missing letter in the passed letter range and return it.
+If all letters are present in the range, return undefined. */
+
+function fearNotLetter(str) {
+    for (let i = 0; i < str.length; i++) {
+        const charCode = str.charCodeAt(i);
+        if (charCode !== str.charCodeAt(0) + i) {
+            return String.fromCharCode(charCode - 1)
+        }
+
+    }
+    return undefined;
+}
+
+fearNotLetter("abce");
+fearNotLetter("abcdefghijklmnopqrstuvwxyz");
+// Sorted Union
+// Convert HTML Entities
+// Sum All Odd Fibonacci Numbers
+// Sum All Primes
+function sumPrimes(num) {
+    let sum = 0;
+    for (let i = 2; i <= num; i++) {
+        if (isPrime(i)) {
+            sum += i
+        }
+    }
+    return sum;
+}
+
+const isPrime = (no) => {
+    let c = 2;
+    while (c * c <= no) {
+        if (no % c == 0) {
+            return false;
+        }
+        c++;
+    }
+    return true;
+}
+
+console.log(sumPrimes(10));
+//https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-sum-all-primes/16085
+
+
+// Smallest Common Multiple
+// Drop it
+// Steamroller
+// Binary Agents
+// Everything Be True
+// Arguments Optional
+// Make a Person
+// Map the Debris
