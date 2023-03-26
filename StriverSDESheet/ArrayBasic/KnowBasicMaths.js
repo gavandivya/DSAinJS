@@ -172,16 +172,61 @@ console.log(divisors1(36))
 // ---------------------------------------------------------------------------
 // Check for Prime
 
+
 /**
- * Example 1:
-Input: n = 36
-Output: 1 2 3 4 6 9 12 18 36
-Explanation: All the divisors of 36 are printed.
+Example 1:
+Input: N = 3
+Output: Prime
+Explanation: 3 is a prime number
 
 Example 2:
-Input: n = 97
-Output: 1 97
-Explanation: Since 97 is a prime number, only 1 and 97 are printed.
+Input: N = 26
+Output: Non-Prime
+Explanation: 26 is not prime number
  */
+
+const isPrime = (no) => {
+    if (no == 1 || no == 0) {
+        return false;
+    }
+
+    for (let i = 2; i <= Math.sqrt(no); i++) {
+        if (no % i == 0) {
+            return false;
+        }
+    }
+    return true;
+
+}
+
+const checkForN = (num) => {
+    for (let i = 1; i <= num; i++) {
+        if (isPrime(i)) {
+            console.log("Prime - ", i)
+        }
+        else {
+            console.log("Not Prime - ", i)
+        }
+    }
+}
+
+checkForN(11);
+
+
+const isPrimeDigit = (no) => {
+    if (no == 1 || no == 0) {
+        return `${no} is not a Prime`;
+    }
+
+    for (let i = 2; i <= Math.sqrt(no); i++) {
+        if (no % i == 0) {
+            return `${no} is not a prime number`;
+        }
+    }
+    return `${no} is a prime number`;;
+
+}
+
+console.log(isPrimeDigit(11));
 
 
