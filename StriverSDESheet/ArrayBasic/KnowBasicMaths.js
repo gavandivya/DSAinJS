@@ -229,4 +229,5 @@ const isPrimeDigit = (no) => {
 
 console.log(isPrimeDigit(11));
 
-
+/**Time Complexity: O(√n)
+Space Complexity: O(1) */
