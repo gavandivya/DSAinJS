@@ -90,7 +90,30 @@ console.log(sumOfN2(5));
 
 // Factorial of N numbers
 
+/**
+Example 1:
+Input: X = 5
+Output: 120
+Explanation: 5! = 5*4*3*2*1
+
+Example 2:
+Input: X = 3
+Output: 6
+Explanation: 3!=3*2*1
+ */
+
+
+const factorial = (num) => {
+    if (num == 1 || num == 0) {
+        return 1;
+    }
+    return num * factorial(num - 1);
+
+}
+
+console.log(factorial(5));
 
 // Reverse an array
+
 // Check if a string is palindrome or not
 // Fibonacci Number
