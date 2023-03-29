@@ -207,9 +207,6 @@ const isPalindromeRecursive = (str, left, right) => {
 console.log(isPalindromeRecursive("abcde", 0, "abcde".length - 1));
 console.log(isPalindromeRecursive("110011", 0, "110011".length - 1));
 console.log(isPalindromeRecursive("aabbcdcbbaa", 0, "aabbcdcbbaa".length - 1));
-/*
-
- */
 
 const isPalindromeRecursive2 = (index, str) => {
     if (index >= str.length / 2) {
@@ -225,6 +222,24 @@ console.log(isPalindromeRecursive2(0, "110011"));
  * Time Complexity: O(N) { Precisely, O(N/2) as we compare the elements N/2 times and swap them}.
 Space Complexity: O(1) { The elements of the given array are swapped in place so no extra space is required}.
  */
+
+//Leetcode
+
+var isPalindromeLeetcode = function (s) {
+    let str = s.toLowerCase().replace(/[^A-Za-z0-9]/g, '');
+    console.log(str);
+    // return s.toLowerCase();
+    if (str === str.split("").reverse().join("")) {
+        return true;
+    }
+    return false;
+};
+
+console.log(isPalindromeLeetcode("A man, a plan, a canal: Panama"));
+/*
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome. */
 
 // Fibonacci Number
 const Fibo = (num) => {
