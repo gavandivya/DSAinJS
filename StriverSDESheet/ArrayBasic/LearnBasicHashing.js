@@ -48,7 +48,6 @@ Space Complexity:  O(N)
 
 //solution2 using map
 const countFreqMap = (array) => {
-
         let map = new Map();
         console.log(map);
         for (let i = 0; i < array.length; i++) {
@@ -58,19 +57,56 @@ const countFreqMap = (array) => {
                 else {
                         map.set(array[i], 1);
                 }
-
         }
         for (let [key, value] of map.entries()) {
-                console.log(key + " " + value);
+                console.log(key + " - " + value);
         }
+        /**
+        10 3
+        5 2
+        15 1
+         */
         for (let a of map.entries()) {
                 console.log(a);
         }
-        console.log(map)
-        console.log(map.entries())
-        console.log(map.keys())
-        console.log(map.values())
+        /**
+        (2) [10, 3]
+        (2) [5, 2]
+        (2) [15, 1]
+         */
+        console.log(map);//Map(3) {10 => 3, 5 => 2, 15 => 1}
+        console.log(map.entries()); //MapIterator { 10 => 3, 5 => 2, 15 => 1}
+        console.log(map.keys()); //MapIterator { 10, 5, 15 }
+        console.log(map.values());//MapIterator { 3, 2, 1 }
 }
 
-countFreqMap([10, 5, 10, 15, 10, 5]);
+
+/**
+ * Find the highest/lowest frequency element
+ */
+
+countFreqMap([10, 5, 10, 15, 10, 5, 5, 5]);
+
+
+const highestLowestFreq = (arr) => {
+        let k = 2;
+        let freqMap = new Map();
+        for (let i = 0; i < arr.length; i++) {
+                if (freqMap.has(arr[i])) {
+                        freqMap.set(arr[i], freqMap.get(arr[i]) + 1);
+                }
+                else {
+                        freqMap.set(arr[i], 1);
+                }
+        }
+
+        for (let [key, value] of freqMap.entries()) {
+                if (value >= k) {
+                        console.log(key + " - ", value);
+                }
+        }
+
+}
+
+console.log(highestLowestFreq([10, 5, 10, 15, 10, 5, 5, 5]))
 
