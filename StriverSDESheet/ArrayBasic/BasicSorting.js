@@ -1,5 +1,3 @@
-//Bubble sort
-//Insertion sort
 //Selection sort
 
 //find max and start replacing with last element.
@@ -82,3 +80,41 @@ const nestedSelectionSortMax = (array) => {
 }
 
 console.log(nestedSelectionSortMax([22, 3, 16, 5, 10, 1, 6, 8, 9, 12, 23]));
+
+//Bubble sort
+
+const bubbleSort = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        let isSwapped = false;
+        for (let j = 0; j < array.length - i - 1; j++) {
+            if (array[j] > array[j + 1]) {
+                [array[j], array[j + 1]] = [array[j + 1], array[j]];
+                isSwapped = true;
+            }
+        }
+        if (!isSwapped) break;
+
+    }
+    return array;
+}
+
+console.log("Bubble Sort - ", bubbleSort([13, 46, 24, 52, 20, 9]));
+
+//Insertion sort
+
+
+const InsertionSort = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j > 0; j--) {
+            if (arr[j] < arr[j - 1]) {
+                [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+            }
+            else {
+                break;
+            }
+        }
+    }
+    return arr;
+}
+
+console.log("Insertion Sort - ", InsertionSort([4, 1, 3, 9, 7]));
