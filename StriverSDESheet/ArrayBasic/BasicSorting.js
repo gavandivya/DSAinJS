@@ -135,7 +135,6 @@ console.log("Insertion Sort - ", InsertionSort([4, 1, 3, 9, 7]));
 
 /**
  * Best Case Time Complexity: 
-
 The best case occurs if the given array is already sorted. And if the given array is already sorted, the outer loop will only run and the inner loop will run for 0 times. 
 So, our overall time complexity in the best case will boil down to O(N), where N = size of the array.
 Time complexity: O(N2), (where N = size of the array), for the worst, and average cases.

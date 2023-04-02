@@ -1,5 +1,6 @@
 // //Merge Sort
-const arr = [35, 24, 83, 51, 11];
+const arr = [35, 24, 83, 51, 11, 3, 35, 24, 1, 6, 7, 22, 89, 54];
+const n = arr.length;
 const mergePseudo = (array, low, mid, high) => {
     let temp = [];
     let left = low;
@@ -37,8 +38,8 @@ const mergePseudo = (array, low, mid, high) => {
 const mergeSortPseudo = (array, low, high) => {
     if (low >= high) return;
     let mid = Math.floor((low + high) / 2);
-    mergeSort(array, low, mid);
-    mergeSort(array, mid + 1, high);
+    mergeSortPseudo(array, low, mid);
+    mergeSortPseudo(array, mid + 1, high);
     return mergePseudo(array, low, mid, high);
 }
 // console.log(mergeSortPseudo(arr, 0, arr.length - 1));
@@ -81,11 +82,41 @@ const mergeSort = (array) => {
     return merge(left, right);
 }
 
-console.log(mergeSort(arr));
+// console.log(mergeSort(arr));
 /**
- * Time complexity: O(nlogn) 
+ * Time complexity: O(nlogn)
 Reason: At each step, we divide the whole array, for that logn and we assume n steps are taken to get a sorted array, so overall time complexity will be nlogn
-Space complexity: O(n)  
+Space complexity: O(n)
 Reason: We are using a temporary array to store elements in sorted order.
 Auxiliary Space Complexity: O(n)
  */
+
+//Recursive Bubble Sort
+
+const recursiveBubble = (array, n) => {
+    if (n == 1) return array;
+    for (let i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+        }
+    }
+    return recursiveBubble(array, n - 1);
+}
+
+// console.log("Recursive Bubble sort - ", recursiveBubble(arr, n));
+
+//Recursive Insertion Sort
+const recursiveInsertion = (array, index, n) => {
+    if (index == n) return array;
+    for (let i = index + 1; i > 0; i--) {
+        if (array[i] < array[i - 1]) {
+            [array[i], array[i - 1]] = [array[i - 1], array[i]];
+        }
+        else {
+            break;
+        }
+    }
+    return recursiveInsertion(arr, index + 1, n)
+}
+console.log("Recursive Insertion sort - ", recursiveInsertion(arr, 0, arr.length
+));
