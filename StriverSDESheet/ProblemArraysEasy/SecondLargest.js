@@ -33,6 +33,16 @@ const secondlargest2Loops = (arr) => {
 console.log(secondlargest2Loops(arr));
 //TC - (2N)
 
+if (arr[i] > secondLargest && arr[i] != largest) {
+    secondLargest = arr[i];
+}
+    }
+return secondLargest;
+}
+
+console.log(secondlargest2Loops(arr));
+//TC - (2N)
+
 
 //way3
 const secondlargest = (arr) => {
@@ -46,9 +56,24 @@ const secondlargest = (arr) => {
         else if (arr[i] < largest && arr[i] > secondLargest) {
             secondLargest = arr[i];
         }
-    }
-    return secondLargest;
-}
+        //way3
+        const secondlargest = (arr) => {
+            let largest = arr[0];
+            let secondLargest = -1;
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > largest) {
+                    secondLargest = largest;
+                    largest = arr[i];
+                }
+                else if (arr[i] < largest && arr[i] > secondLargest) {
+                    secondLargest = arr[i];
+                }
+            }
+            return secondLargest;
+            return secondLargest;
+        }
 
-console.log(secondlargest(arr));
+        console.log(secondlargest(arr));
+        //TC - O(N)
+        console.log(secondlargest(arr));
 //TC - O(N)
