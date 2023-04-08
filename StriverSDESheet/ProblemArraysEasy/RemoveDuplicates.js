@@ -21,6 +21,7 @@ const RemoveDuplicates = (array) => {
 //way2
 
 const removeDup = (array) => {
+
     let j = 0;
     for (let i = 1; i < array.length; i++) {
         if (array[j] != array[i]) {
@@ -28,7 +29,7 @@ const removeDup = (array) => {
             array[j] = array[i];
         }
     }
-    return array.slice(0, j + 1)
+    return array.slice(0, j + 1);
 }
 
 console.log(removeDup(arr));

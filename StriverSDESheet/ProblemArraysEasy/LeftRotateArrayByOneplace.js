@@ -14,16 +14,13 @@ const rotate = (array) => {
 //TC - O(N)
 //SC- O(1)
 
-
 //for shifting left by n numbers
 const rotateByD = (array, d, n) => {
     if (d > n) {
         d = d % n;
     }
     let temp = array.slice(0, d);
-    console.log(temp);
     for (let i = 0; i < n - d; i++) {
-        console.log(array[i], array[i + d]);
         array[i] = array[i + d];
     }
     console.log(array);
@@ -33,4 +30,13 @@ const rotateByD = (array, d, n) => {
     return array;
 }
 
-console.log(rotateByD(arr, 2, 6));
+// console.log(rotateByD(arr, 2, 6));
+
+//way3
+const rotatebyN = (array, d) => {
+    array = array.slice(0, d).reverse().concat(array.slice(d).reverse());
+    return array.reverse()
+
+}
+
+console.log(rotatebyN(arr, 2))
