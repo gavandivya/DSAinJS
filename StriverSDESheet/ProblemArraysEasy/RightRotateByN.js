@@ -30,11 +30,11 @@ const rotateByNReverse = (array, d) => {
     reverse(0, array.length - 1);
     return array;
 }
-// console.log(rotateByNReverse(arr, 3));
+console.log(rotateByNReverse(arr, 3));
 
 //way3
 const rotatebyN = (array, d) => {
     array = array.slice(0, array.length - d).reverse().concat(array.slice(array.length - d).reverse());
     return array.reverse();
 }
-// console.log(rotatebyN(arr, 3))
+console.log(rotatebyN(arr, 3))
