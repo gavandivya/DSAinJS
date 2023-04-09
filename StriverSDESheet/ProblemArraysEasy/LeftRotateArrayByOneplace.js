@@ -10,7 +10,7 @@ const rotate = (array) => {
     return array;
 }
 
-// console.log(rotate(arr));
+console.log(rotate(arr));
 //Time complexity: O(n). Space complexity: O(1).
 
 
@@ -58,5 +58,4 @@ const rotateByNReverse = (array, d) => {
     return array;
 }
 console.log(rotateByNReverse(arr, 3));
-
 //Time complexity: O(n). Space complexity: O(1).
