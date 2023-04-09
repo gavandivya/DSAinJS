@@ -11,8 +11,8 @@ const rotate = (array) => {
 }
 
 // console.log(rotate(arr));
-//TC - O(N)
-//SC- O(1)
+//Time complexity: O(n). Space complexity: O(1).
+
 
 //for shifting left by n numbers
 const rotateByD = (array, d, n) => {
@@ -23,20 +23,40 @@ const rotateByD = (array, d, n) => {
     for (let i = 0; i < n - d; i++) {
         array[i] = array[i + d];
     }
-    console.log(array);
     for (let i = n - d; i < n; i++) {
         array[i] = temp[i + d - n];
     }
     return array;
 }
 
-// console.log(rotateByD(arr, 2, 6));
+console.log(rotateByD(arr, 2, 6));
+//Time complexity: O(n) Space complexity: O(n)
 
 //way3
 const rotatebyN = (array, d) => {
     array = array.slice(0, d).reverse().concat(array.slice(d).reverse());
     return array.reverse()
-
 }
 
 console.log(rotatebyN(arr, 2))
+//Time complexity: O(n). Space complexity: O(1).
+
+
+//way4
+const rotateByNReverse = (array, d) => {
+    const reverse = (left, right) => {
+        while (left <= right) {
+            [array[left], array[right]] = [array[right], array[left]];
+            left++;
+            right--;
+        }
+        console.log(array);
+    }
+    reverse(0, d - 1);
+    reverse(d, array.length - 1);
+    reverse(0, array.length - 1);
+    return array;
+}
+console.log(rotateByNReverse(arr, 3));
+
+//Time complexity: O(n). Space complexity: O(1).
