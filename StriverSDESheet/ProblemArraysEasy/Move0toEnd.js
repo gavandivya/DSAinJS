@@ -28,11 +28,17 @@ const move0toEnd = (array) => {
 
 const move0sToEnd = (array) => {
     let j = 0;
+    let noZero = true;
     for (let i = 0; i < array.length; i++) {
         if (array[i] == 0) { //O(x)
             j = i;
+            noZero = false;
             break;
         }
+    }
+
+    if (noZero) {
+        return array;
     }
 
     for (let i = j + 1; i < array.length; i++) {
