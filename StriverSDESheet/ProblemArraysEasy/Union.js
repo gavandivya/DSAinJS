@@ -24,7 +24,6 @@ console.log(unionInsorted(arr1, arr2));
 
 
 //way2 using Two pointer technique
-
 const findUnion = (array1, array2) => {
     let unionArray = [];
     let i = 0; let j = 0;
