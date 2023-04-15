@@ -1,7 +1,41 @@
 const array = [1, 2, 3, 4, 5, 7, 8, 9];
 //way1 linear search
 
+const missingElement = () => {
+    for (let i = 1; j <= array.length; i++) {
+        let flag = 0;
+        for (let j = 0; j < array.length; j++) {
+            if (i == array[j]) {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 0) {
+            return i;
+        }
+    }
 
+}
+
+
+console.log(missingElement());
+//TC - O(N*N)
+//SC - O(1)
+
+
+const missingElements = () => {
+    let i = 1;
+    for (let j = 0; j < array.length; j++) {
+        if (i !== array[j]) {
+            return i;
+        }
+        i++;
+    }
+}
+
+console.log(missingElements());
+//TC - O(N)
+//SC - O(1)
 
 //way2 hash method
 
@@ -10,18 +44,21 @@ const array = [1, 2, 3, 4, 5, 7, 8, 9];
 const missingUsingXOR = () => {
     let xor1 = 0;
     let xor2 = 0;
-    for (let i = 1; i <= array.length + 1; i++) {
-        xor1 = xor1 ^ i;
-    }
+    // for (let i = 1; i <= array.length + 1; i++) {
+    //     xor1 = xor1 ^ i;
+    // }
 
     for (let i = 0; i < array.length; i++) {
+        xor1 = xor1 ^ (i + 1);// we can use same loop
         xor2 = xor2 ^ array[i];
     }
 
     return xor1 ^ xor2;
 }
 
-console.log(missingUsingXOR());
+// console.log(missingUsingXOR());
+//TC - O(2N) but we can put xor1 in 2nd loop
+//SC - O(1)
 
 
 //way4 using sum 
@@ -36,5 +73,6 @@ const missingEle = () => {
 }
 
 // console.log(missingEle());
+//This approach takes sligtly more space has int can take (10^5 X 10^5+1)/2 so long will be needed
 //Time complexity - O(N)
 //Space complexity - O(1)
