@@ -23,10 +23,17 @@ console.log(missingElement());
 //SC - O(1)
 
 //array should be in sorted array
+const missingElements = () => {
+    let i = 1;
+    for (let j = 0; j < array.length; j++) {
+        if (i !== array[j]) {
+            return i;
+        }
+        i++;
+    }
+}
 
-
-
-// console.log(missingElements());
+console.log(missingElements());
 //TC - O(N)
 //SC - O(1)
 
