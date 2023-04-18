@@ -18,6 +18,7 @@ const findmaxConsecutive = () => {
     }
 }
 
+
 // console.log(findmaxConsecutive());
 //time complexity - O(n*n) - O(N^2)
 //space complexity - O(1)
