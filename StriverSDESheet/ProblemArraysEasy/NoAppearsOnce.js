@@ -1,9 +1,11 @@
 //Find the number that appears once, and the other numbers twice
-//brute force method
 
-//do linear search and get the count if its just the one then the no is occured just once
-//way 1
 const array = [1, 1, 2, 2, 3, 4, 4, 5, 5]
+
+
+//way 1
+//do linear search and get the count if its just the one then the no is occured just once
+
 const findmaxConsecutive = () => {
     let count = 0;
     for (let i = 0; i < array.length; i++) {
@@ -24,8 +26,8 @@ console.log(findmaxConsecutive());
 //space complexity - O(1)
 
 
-//better solutin using hashing
 //way 2
+//better solution using hashing
 const findConse = () => {
     let temp = array.fill(0);
     console.log(temp);
@@ -44,7 +46,6 @@ const findConse = () => {
 console.log(findConse());
 
 //way 3
-//optimzed solution
 //optimal solution using XOR approach
 const findCon = () => {
     let xor = array[0];
