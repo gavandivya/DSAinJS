@@ -54,7 +54,6 @@ const findCon = () => {
     return xor;
 }
 
-
 console.log(findCon());
 /**
 Time Complexity: O(N), where N = size of the array.
