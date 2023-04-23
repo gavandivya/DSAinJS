@@ -1,7 +1,5 @@
 //Find the number that appears once, and the other numbers twice
-
 const array = [1, 1, 2, 2, 3, 4, 4, 5, 5]
-
 
 //way 1
 //do linear search and get the count if its just the one then the no is occured just once
@@ -62,6 +60,3 @@ Reason: We are iterating the array only once.
 
 Space Complexity: O(1) as we are not using any extra space.
  */
-
-
-
