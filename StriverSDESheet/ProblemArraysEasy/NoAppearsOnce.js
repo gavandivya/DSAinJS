@@ -3,7 +3,6 @@ const array = [1, 1, 2, 2, 3, 4, 4, 5, 5]
 
 //way 1
 //do linear search and get the count if its just the one then the no is occured just once
-
 const findmaxConsecutive = () => {
     let count = 0;
     for (let i = 0; i < array.length; i++) {
