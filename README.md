@@ -1,10 +1,10 @@
-### Searching Algorithm
+### Searching Algorithms
 
 1. [Linear search](https://github.com/gavandivya/DSAinJS/blob/main/SearchingAlgo)
 
 2. [Binary search](https://github.com/gavandivya/DSAinJS/blob/main/SearchingAlgo)
 
-### Sorting Algorithm
+### Sorting Algorithms
 
 1. [Bubble Sort](https://github.com/gavandivya/DSAinJS/tree/main/SortingAlgo)
 
