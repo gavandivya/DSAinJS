@@ -1,3 +1,4 @@
+//js interview questions
 function f(a, b, c) {
     m = ["1", "2", "3"];
     a = 3;
