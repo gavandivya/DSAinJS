@@ -22,7 +22,6 @@ Explanation: 2 occurs 3 times in the array
 //solution 1 using 2 for loops
 
 const countFreq = (array) => {
-
         let visited = new Array(array.length).fill(false);
         for (let i = 0; i < array.length; i++) {
                 if (visited[i] == true) continue;
@@ -107,6 +106,5 @@ const highestLowestFreq = (arr) => {
         }
 
 }
-
 console.log(highestLowestFreq([10, 5, 10, 15, 10, 5, 5, 5]))
 
