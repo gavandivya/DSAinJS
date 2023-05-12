@@ -40,9 +40,9 @@ const countFreq = (array) => {
 
 countFreq([10, 5, 10, 15, 10, 5]);
 /**
- * Time Complexity: O(N*N)
+Time Complexity: O(N*N)
 Space Complexity:  O(N)
- */
+*/
 
 
 //solution2 using map
@@ -85,7 +85,6 @@ const countFreqMap = (array) => {
  */
 
 countFreqMap([10, 5, 10, 15, 10, 5, 5, 5]);
-
 
 const highestLowestFreq = (arr) => {
         let k = 2;
