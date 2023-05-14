@@ -1,5 +1,5 @@
 //Know Basic Maths
-
+//----------------------------------
 // Count Digits		
 const countDigits = (num) => {
     let count = 0;
@@ -133,7 +133,6 @@ console.log(isArmstrong(153));
 /**Time Complexity: O(n) where n is the number of digits since we need to traverse every digit and add digits raised to power no. of digits to sum.
 Space Complexity: O(1) since no extra space is required */
 
-
 // ---------------------------------------------------------------------------
 // Print all Divisors
 /**
@@ -171,7 +170,6 @@ console.log(divisors1(36))
 
 // ---------------------------------------------------------------------------
 // Check for Prime
-
 
 /**
 Example 1:
