@@ -46,6 +46,7 @@ const findMin = (array, start) => {
     return min;
 }
 
+
 console.log("Finding Min and replacing from first", selectionSortMin([2, 3, 4, 5, 10, 1, 6, 8, 9, 12, 23]));
 
 //using nested for loop
