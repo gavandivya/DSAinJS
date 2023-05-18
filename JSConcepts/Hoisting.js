@@ -13,7 +13,7 @@ test1();
 
 let a = 1;
 function test2() {
-    console.log(a);
+    //console.log(a);
     let a = 2;
 }
 
@@ -29,3 +29,12 @@ function test3() {
 
 
 test3();
+
+
+console.log(foo);
+var foo = "foo";
+//------------------
+var foo;
+console.log(foo);
+foo = "foo";
+//Output - undefined
