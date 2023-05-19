@@ -38,3 +38,17 @@ var foo;
 console.log(foo);
 foo = "foo";
 //Output - undefined
+
+
+q1
+console.log(foo); // undefined
+var foo = "foo";
+console.log(foo); // foo
+
+
+//q2
+console.log(foo); // ReferenceError: foo is not defined
+console.log(typeof foo); // Output: undefined
+foo = "foo";
+console.log(foo); // foo
+
