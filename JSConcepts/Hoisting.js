@@ -52,3 +52,12 @@ console.log(typeof foo); // Output: undefined
 foo = "foo";
 console.log(foo); // foo
 
+
+//q3
+function foo() {
+    console.log(foo); // undefined
+    var foo = "foo";
+}
+
+foo();
+
