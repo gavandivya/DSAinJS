@@ -40,7 +40,7 @@ foo = "foo";
 //Output - undefined
 
 
-q1
+//q1
 console.log(foo); // undefined
 var foo = "foo";
 console.log(foo); // foo
@@ -61,3 +61,35 @@ function foo() {
 
 foo();
 
+
+//q4
+var foo = "bar";
+function greet() {
+    console.log(foo); // undefined
+    var foo = "foo";
+}
+
+greet();
+
+//q5
+foo(); // Hello
+function foo() {
+    console.log("Hello");
+}
+
+//q6
+foo(); // TypeError: foo is not a function
+var foo = function foo() {
+    console.log("Hello");
+};
+//output - acts as a variable
+
+//q7
+function foo() {
+    a = 100; // variable declared without let n var keyword becomes global
+    var b = 200;
+}
+
+foo();
+console.log(a); // 100
+console.log(b);
