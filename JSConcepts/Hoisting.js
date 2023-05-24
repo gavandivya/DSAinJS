@@ -93,3 +93,20 @@ function foo() {
 foo();
 console.log(a); // 100
 console.log(b);
+
+//q8
+function foo() {
+    console.log(a); // ReferenceError: a is not defined
+    a = 100;
+}
+
+foo();
+
+//q9
+var ab = 100;
+function foo() {
+    console.log(ab); // 100
+    ab = 200;
+}
+
+foo();
