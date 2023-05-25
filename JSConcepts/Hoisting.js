@@ -110,3 +110,34 @@ function foo() {
 }
 
 foo();
+
+//q10
+var ab = 100;
+function foo() {
+    console.log(ab); // undefined
+    var ab = 200;
+}
+
+foo();
+
+
+//q11
+function foo() {
+    console.log("Hey");
+}
+
+foo(); // Hello
+
+function foo() {
+    console.log("Hello");
+}
+
+//q12
+
+console.log(typeof foo); // function as function are hoited first than variable
+function foo() {
+    return "bar";
+}
+
+var foo = "bar";
+
