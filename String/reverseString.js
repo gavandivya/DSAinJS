@@ -1,4 +1,5 @@
-//Reverse String
+// Given a string reverse each words in it.
+
 
 /**
 Input: "the sky is blue"
