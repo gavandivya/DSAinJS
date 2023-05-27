@@ -20,4 +20,4 @@ while (i < string.length) {
     i = i + strLen;
 }
 
-console.log(array)
+console.log(array);
