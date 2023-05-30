@@ -47,6 +47,18 @@ function removeDuplicate() {
 console.log(removeDuplicate());
 
 
+//sol5
+
+let arr2 = ["apple", "mango", "apple",
+    "orange", "mango", "mango"];
+
+function removeDuplicates(arr) {
+    return [...new Set(arr2)];
+}
+
+console.log(removeDuplicates(arr));
+
+
 //sol4 using for and include method
 const arr1 = [1, 22, 3, 4, 22, 6, 3, 6, 6];
 const newArr = [];
