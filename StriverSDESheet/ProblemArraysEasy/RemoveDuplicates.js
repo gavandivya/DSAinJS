@@ -35,7 +35,7 @@ const removeDup = (array) => {
 console.log(removeDup(arr));
 
 
-//sol3
+//sol3 using filter method
 const array = [1, 22, 3, 4, 22, 6, 3];
 
 function removeDuplicate() {
@@ -47,8 +47,7 @@ function removeDuplicate() {
 console.log(removeDuplicate());
 
 
-//sol4
-
+//sol4 using for and include method
 const arr1 = [1, 22, 3, 4, 22, 6, 3, 6, 6];
 const newArr = [];
 function removeDuplicate() {
