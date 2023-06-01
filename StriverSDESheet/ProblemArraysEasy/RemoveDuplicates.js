@@ -33,3 +33,31 @@ const removeDup = (array) => {
 }
 
 console.log(removeDup(arr));
+
+
+//sol3
+const array = [1, 22, 3, 4, 22, 6, 3];
+
+function removeDuplicate() {
+    return array.filter((item, index) => {
+        return array.indexOf(item) === index
+    })
+}
+
+console.log(removeDuplicate());
+
+
+//sol4
+
+const arr1 = [1, 22, 3, 4, 22, 6, 3, 6, 6];
+const newArr = [];
+function removeDuplicate() {
+    for (let i = 0; i < arr1.length; i++) {
+        if (!newArr.includes(arr1[i])) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+
+console.log(removeDuplicate());
