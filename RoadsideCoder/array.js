@@ -14,9 +14,7 @@
 
 //Implementation Part
 
-
 //Array Declaration
-
 //way1
 let array1 = new Array();
 //way2
