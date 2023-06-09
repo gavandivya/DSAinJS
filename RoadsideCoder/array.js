@@ -132,14 +132,22 @@ console.log(fun(nums, nums2, "hello")) // [[1, 2, 3, 4], [5,6,7,8], 'hello'];
 const newArr = nums.concat(nums2, array, 'hello', 1, 2, 3); //consist of multiple array + elements
 console.log(newArr);
 
-/* 13. slice() access certain part of array returns new array doesn't modify current array */
+/* 13. slice() access certain part of array returns new array doesn't modify current array 
+slice()
+slice(start)
+slice(start, end)*/
 const slice1 = nums.slice(0, 2); //start,end
 const slice2 = nums.slice(-2);  //from last 2
 const slice3 = nums.slice(2);  //start from 2
 console.log(slice1, slice2, slice3);
 console.log(nums);
 
-/* 14. splice() access certain part of array and modify current array */
+/* 14. splice() access certain part of array and modify current array 
+splice(start)
+splice(start, deleteCount)
+splice(start, deleteCount, item1)
+splice(start, deleteCount, item1, item2, itemN)
+*/
 const splice1 = nums.splice(0, 1); //start,no of elements to be deleted - [1, 2] nums = [3,4]
 console.log(splice1, nums);
 const splice2 = nums.splice(-2, 0, 'divya');  //from last 2 then insert
