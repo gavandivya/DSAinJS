@@ -96,11 +96,65 @@ const some = arr.some((item) => {
 })
 console.log(some);
 
-/**
- * 9.   every() return true if every single elememnt from array satisfies the condition
- */
+/* 9.   every() return true if every single elememnt from array satisfies the condition*/
 const every = arr.every((item) => {
     return item > 3
 })
 console.log(every);
 
+/* 10.   find() return first element that satisfies the condition else return undefined*/
+
+const find = arr.find((item) => {
+    return item > 3
+})
+console.log(find);
+
+/* 11.   Spread and Rest*/
+
+const nums = [1, 2, 3, 4];
+const nums2 = [5, 6, 7, 8];
+
+//copy both array in finalnums
+const finalNums = [...nums, ...nums2]; //spread converts array of elemnts into list of numbers
+console.log(finalNums);
+
+//rest is used inside a function parameter where we have N arguements
+
+const fun = (...num) => {
+    return num;
+}
+
+console.log(fun(1, 2, 3, 4, 5)) //list of numbers converted to array - [1, 2, 3, 4, 5]
+console.log(fun(nums, nums2, "hello")) // [[1, 2, 3, 4], [5,6,7,8], 'hello'];
+
+
+/* 12. concat() join 2 arrays and returns new array */
+const newArr = nums.concat(nums2, array, 'hello', 1, 2, 3); //consist of multiple array + elements
+console.log(newArr);
+
+/* 13. slice() access certain part of array returns new array doesn't modify current array */
+const slice1 = nums.slice(0, 2); //start,end
+const slice2 = nums.slice(-2);  //from last 2
+const slice3 = nums.slice(2);  //start from 2
+console.log(slice1, slice2, slice3);
+console.log(nums);
+
+/* 14. splice() access certain part of array and modify current array */
+const splice1 = nums.splice(0, 1); //start,no of elements to be deleted - [1, 2] nums = [3,4]
+console.log(splice1, nums);
+const splice2 = nums.splice(-2, 0, 'divya');  //from last 2 then insert
+const splice3 = nums.splice(1);  //start from 1 and delete all elemnts ,deletecount>=arr.length or missing
+console.log(splice3, nums); // 
+/**
+ (1) [1] (3) [2, 3, 4]
+(0) [] (4) [2, 'divya', 3, 4]
+(3) ['divya', 3, 4] (1) [2]**/
+
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb'); //deletecount = 0 so inserts at position 1 no delete
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+const months1 = ['Jan', 'Feb', 'March', 'April', 'June'];
+months1.splice(5, 2, 'May', 'June'); //deletecount = 1/2/3.. and new element mentioned so replaces at position 3 else insert at the end
+console.log(months1);
