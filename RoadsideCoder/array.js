@@ -25,17 +25,12 @@ let person = {
     age: 55
 }
 
-/**
- * adding element at end  
- * 1.   push()
- */
+/* 1.   push() adding element at end */
 array.push('Divya');
 array.push('Disha', 'Bruno')
 console.log(array);
 
-/**adding element at start 
- * 2.   unshift()
- * */
+/* 2.   unshift() adding element at start */
 array.unshift('Rashmi', person);
 console.log(array);
 
@@ -46,14 +41,10 @@ console.log(array[1].name);
 //no of elements in array
 console.log(array.length);
 
-/**removing elemnts from start
- * 3.   pop()
- * */
+/* 3.   pop() removing elemnts from start */
 array.pop();
 
-/**removing elemnts from end
- * 4.   shift()
- * */
+/* 4.   shift() removing elements from end */
 array.shift();
 
 /**
@@ -81,11 +72,35 @@ const newNums = arr.map((item, index, array) => {
 
 console.log(newNums);
 
-/* 5.   filter() allows us to add condition and return those elements that satisfy the conditions*/
+/* 6.   filter() allows us to add condition and return those elements that satisfy the conditions*/
 
 const filterNum = arr.filter((item) => {
     return item > 3
 })
 
 console.log(filterNum);
+
+/**
+ * 7.   reduce() takes array and reduce down to single value  */
+const reduceNum = arr.reduce((sum, item) => {
+    return sum + item
+}, 0);
+
+console.log(reduceNum);
+
+/**
+ * 8.   some() return true if any elememnt from array satisfies the condition
+ */
+const some = arr.some((item) => {
+    return item > 3
+})
+console.log(some);
+
+/**
+ * 9.   every() return true if every single elememnt from array satisfies the condition
+ */
+const every = arr.every((item) => {
+    return item > 3
+})
+console.log(every);
 
