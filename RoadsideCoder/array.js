@@ -190,3 +190,34 @@ console.log(nums2.reverse());
 const unsorted = [3, 4, 5, 7, 9, 2, 1];
 unsorted.sort((a, b) => a - b);
 console.log(unsorted);
+
+/**
+DSA Interview Questions on Array in Javascript
+
+
+Ques 1 - Second Largest Number
+Solution #1 - Brute Force Approach
+Time Complexity of this Algorithm
+Solution #2 - Optimised Approach
+Explanation of Solution #2
+Time Complexity of this Algorithm
+Space Complexity of this Algorithm
+ */
+
+/**
+Ques 2 - Rotate Array by K
+Solution #1 - Using Inbuilt JS Functions
+Time Complexity of this Algorithm
+Solution #2 - Without Inbuilt Functions
+Time Complexity of this Algorithm
+Space Complexity of this Algorithm
+ */
+
+/**
+Ques 3 - Remove Duplicates from Sorted Array
+Solution #1 - With Inbuilt JS Methods
+Time Complexity of this Algorithm
+Space Complexity of this Algorithm
+Solution #2 - Two Pointer Approach
+Time / Space Complexity of this Algorithm
+ */
