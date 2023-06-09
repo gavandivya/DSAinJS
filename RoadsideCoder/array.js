@@ -128,11 +128,11 @@ console.log(fun(1, 2, 3, 4, 5)) //list of numbers converted to array - [1, 2, 3,
 console.log(fun(nums, nums2, "hello")) // [[1, 2, 3, 4], [5,6,7,8], 'hello'];
 
 
-/* 12. concat() join 2 arrays and returns new array */
+/* 12.  concat() join 2 arrays and returns new array */
 const newArr = nums.concat(nums2, array, 'hello', 1, 2, 3); //consist of multiple array + elements
 console.log(newArr);
 
-/* 13. slice() access certain part of array returns new array doesn't modify current array 
+/* 13.  slice() access certain part of array returns new array doesn't modify current array 
 slice()
 slice(start)
 slice(start, end)*/
@@ -142,7 +142,7 @@ const slice3 = nums.slice(2);  //start from 2
 console.log(slice1, slice2, slice3);
 console.log(nums);
 
-/* 14. splice() access certain part of array and modify current array 
+/* 14.  splice() access certain part of array and modify current array 
 splice(start)
 splice(start, deleteCount)
 splice(start, deleteCount, item1)
@@ -166,3 +166,21 @@ console.log(months);
 const months1 = ['Jan', 'Feb', 'March', 'April', 'June'];
 months1.splice(5, 2, 'May', 'June'); //deletecount = 1/2/3.. and new element mentioned so replaces at position 3 else insert at the end
 console.log(months1);
+
+/* 15.   fill() -  replaces all the elements */
+const dummy = [2, 3, 4, 5];
+dummy.fill(0, 2);
+console.log(dummy);
+
+/* 16.   findIndex - return index of first element and if does not exist return -1 */
+const arr1 = nums.findIndex((item) => {
+    return item === 2;
+});
+console.log(arr1);
+
+/* 17.   flat  - when we have multiple array nested inside other array */
+const numbers = [1, [2, 3], [[4, [5]], 6]]; //[1,2,3,4,5,6]
+console.log(numbers.flat(3)); //3 level nested
+
+/* 18.   reverse  - reverse the array */
+console.log(nums2.reverse());
