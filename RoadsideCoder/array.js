@@ -184,3 +184,9 @@ console.log(numbers.flat(3)); //3 level nested
 
 /* 18.   reverse  - reverse the array */
 console.log(nums2.reverse());
+
+
+/* 18.   sort  - sort the array in asc,desc* a-b,b-a*/
+const unsorted = [3, 4, 5, 7, 9, 2, 1];
+unsorted.sort((a, b) => a - b);
+console.log(unsorted);
