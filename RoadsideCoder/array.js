@@ -202,39 +202,57 @@ Use sort function and then return second last by just comparing if it is not sam
 
  */
 const array2 = [12, 35, 1, 10, 34, 1, 35, 35];
-const sorted = array2.sort((a, b) => a - b);
+const sorted = array2.sort((a, b) => a - b); //O(nlogn)
 
 const secondLargest = () => {
     for (let i = array2.length - 1; i > 0; i--) {
-        if (sorted[i] != sorted[i - 1]) {
+        if ((sorted[i] != sorted[i - 1]) && sorted.length >= 2) {
             return sorted[i - 1];
         }
     }
+    return -1;
 }
 
 console.log(secondLargest());
 
 
 const secondLargest2 = () => {
-    const uniqueArr = Array.from(new Set(array2));
+    const uniqueArr = Array.from(new Set(array2)); //O(N)
     uniqueArr.sort((a, b) => b - a);
     if (uniqueArr.length >= 2) {
         return uniqueArr[1];
     }
-    else {
-        return -1;
-    }
+    return -1;
 }
 
 console.log(secondLargest2());
+//Time Complexity of this Algorithm - O(NlogN)
+
 
 /*
-Time Complexity of this Algorithm
 Solution #2 - Optimised Approach
 Explanation of Solution #2
-Time Complexity of this Algorithm
-Space Complexity of this Algorithm
+*/
+const optimized = () => {
+    let largest = array2[0];
+    let secondLargest = -1;
+    for (let i = 1; i < array2.length; i++) { //[12, 33, 1, 10, 35, 1, 34]
+        if (largest < array2[i]) {
+            secondLargest = largest;
+            largest = array2[i];
+        }
+        else if (secondLargest > array2[i] && largest < array2[i]) {
+            secondLargest = array2[i];
+        }
+    }
+    return secondLargest;
+}
+console.log(optimized());
+/*
+Time Complexity of this Algorithm - O(n)
+Space Complexity of this Algorithm - O(1)
  */
+
 
 /**
 Ques 2 - Rotate Array by K
