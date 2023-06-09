@@ -197,6 +197,38 @@ DSA Interview Questions on Array in Javascript
 
 Ques 1 - Second Largest Number
 Solution #1 - Brute Force Approach
+
+Use sort function and then return second last by just comparing if it is not same as largest
+
+ */
+const array2 = [12, 35, 1, 10, 34, 1, 35, 35];
+const sorted = array2.sort((a, b) => a - b);
+
+const secondLargest = () => {
+    for (let i = array2.length - 1; i > 0; i--) {
+        if (sorted[i] != sorted[i - 1]) {
+            return sorted[i - 1];
+        }
+    }
+}
+
+console.log(secondLargest());
+
+
+const secondLargest2 = () => {
+    const uniqueArr = Array.from(new Set(array2));
+    uniqueArr.sort((a, b) => b - a);
+    if (uniqueArr.length >= 2) {
+        return uniqueArr[1];
+    }
+    else {
+        return -1;
+    }
+}
+
+console.log(secondLargest2());
+
+/*
 Time Complexity of this Algorithm
 Solution #2 - Optimised Approach
 Explanation of Solution #2
