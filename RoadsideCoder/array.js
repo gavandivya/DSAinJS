@@ -251,10 +251,8 @@ console.log(optimized());
 /*
 Time Complexity of this Algorithm - O(n)
 Space Complexity of this Algorithm - O(1)
- */
+--------------------------------------------------------------------------------
 
-
-/**
 Ques 2 - Rotate Array by K
 Solution #1 - Using Inbuilt JS Functions
 [1, 2, 3, 4, 5, 6, 7] -> [5, 6, 7, 1, 2, 3, 4] -> length = 7, k = 3
@@ -272,15 +270,43 @@ const rotatedArray = (arr, k) => {
 
 console.log(rotatedArray(array3, 3));
 /*
-Time Complexity of this Algorithm
-Solution #2 - Without Inbuilt Functions
-Time Complexity of this Algorithm
-Space Complexity of this Algorithm
- */
+Time Complexity of this Algorithm - O(N)
+
+Solution #2 - Without Inbuilt Functions by reversing the array 3 times
+[1, 2, 3, 4, 5, 6, 7] = [7, 6, 5, 4, 3, 2, 1]; = [4, 5, 6, 7, 3, 2, 1] = [4, 5, 6, 7, 1, 2, 3]
+*/
+const array4 = [1, 2, 3, 4, 5, 6, 7];
+let k = 3;
+const optimizedRotated = (arr, k) => {
+
+    if (k > arr.length) {
+        k = k % arr.length;
+    }
+    reverse(arr, 0, arr.length - 1); // O(N)
+    reverse(arr, 0, k - 1);// O(k)
+    reverse(arr, k, arr.length - 1); // O(N-k)
+    return arr;
+}
+
+const reverse = (arr, start, end) => {
+    while (start < end) {
+        [arr[start], arr[end]] = [arr[end], arr[start]];
+        start++;
+        end--;
+    }
+}
+
+console.log(optimizedRotated(array4, 3));
 
 /**
+ * Time Complexity of this Algorithm - O(N)
+Space Complexity of this Algorithm - O(1)
+
+------------------------------------------------------------------------
 Ques 3 - Remove Duplicates from Sorted Array
 Solution #1 - With Inbuilt JS Methods
+*/
+/*
 Time Complexity of this Algorithm
 Space Complexity of this Algorithm
 Solution #2 - Two Pointer Approach
