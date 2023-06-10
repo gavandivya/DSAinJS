@@ -257,6 +257,21 @@ Space Complexity of this Algorithm - O(1)
 /**
 Ques 2 - Rotate Array by K
 Solution #1 - Using Inbuilt JS Functions
+[1, 2, 3, 4, 5, 6, 7] -> [5, 6, 7, 1, 2, 3, 4] -> length = 7, k = 3
+*/
+const array3 = [1, 2, 3, 4, 5, 6, 7];
+const arraySize = array3.length;
+const rotatedArray = (arr, k) => {
+    if (k > arraySize) {
+        k = k % arraySize;
+    }
+    const splice = arr.splice(arraySize - k, k);
+    arr.unshift(...splice);
+    return arr;
+}
+
+console.log(rotatedArray(array3, 3));
+/*
 Time Complexity of this Algorithm
 Solution #2 - Without Inbuilt Functions
 Time Complexity of this Algorithm
