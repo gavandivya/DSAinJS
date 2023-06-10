@@ -306,9 +306,42 @@ Space Complexity of this Algorithm - O(1)
 Ques 3 - Remove Duplicates from Sorted Array
 Solution #1 - With Inbuilt JS Methods
 */
+
+const dupArray = [0, 0, 0, 1, 2, 3, 4, 4, 5, 6];
+
+const removeDup = (array) => {
+    for (let i = 0; i < array.length - 1; i++) {//O(N)
+        if (array[i] === array[i + 1]) {
+            array.splice(i + 1, 1); //O(1)
+            i--;
+        }
+    }
+    return array;
+}
+
+console.log(removeDup(dupArray));
 /*
-Time Complexity of this Algorithm
-Space Complexity of this Algorithm
-Solution #2 - Two Pointer Approach
-Time / Space Complexity of this Algorithm
+Time Complexity of this Algorithm - O(N)
+Space Complexity of this Algorithm - O(1)
+
+
+Solution #2 - Two Pointer Approach*/
+const dupArray2 = [0, 0, 0, 1, 2, 3, 4, 4, 5, 6];
+const removeDupOpti = (array) => {
+    if (array.length === 0) return 0;
+    let j = 0;
+    for (let i = 1; i < array.length; i++) {//O(N)
+        if (array[i] !== array[j]) {
+            j++;
+            array[j] = array[i];
+        }
+    }
+    return array.slice(0, j + 1);
+}
+
+console.log(removeDupOpti(dupArray2));
+
+/*
+Time Complexity of this Algorithm - O(N)
+Space Complexity of this Algorithm - O(1)
  */

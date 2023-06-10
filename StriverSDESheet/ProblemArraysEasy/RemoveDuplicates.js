@@ -19,7 +19,7 @@ const RemoveDuplicates = (array) => {
 // console.log(RemoveDuplicates(arr));
 
 //way2
-
+//const arr = [2, 2, 3, 4, 5] will only work for sorted array
 const removeDup = (array) => {
 
     let j = 0;
