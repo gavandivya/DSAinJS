@@ -1,6 +1,17 @@
 
-//reverse a string
+//Given a input string s, reverse a order of words
+const reverseString = (str) => {
+    let stack = [];
+    const array = str.split(" ");
+    const size = array.length;
+    for (let i = 0; i < size; i++) {
+        const top = array.pop();
+        stack.push(top);
+    }
+    return stack.join(" ");
+}
 
+console.log(reverseString("The sky is blue"));
 
 //balance parentesis
 const bracket = "[({})]"
