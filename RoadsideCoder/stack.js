@@ -1,4 +1,5 @@
 //Stack Implementation
+//methods - pop,peek,push,isEmpty
 
 class Stack {
     constructor() {
