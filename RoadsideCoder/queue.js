@@ -1,1 +1,9 @@
-//Implement queue
+/*Implement queue
+enqueue(ele);
+dequeue();
+peek();
+isEmpty();
+size();
+*/
+
+

@@ -1,5 +1,10 @@
 //Stack Implementation
-//methods - pop,peek,push,isEmpty
+/*methods - 
+pop()
+peek()
+push(ele)
+isEmpty()
+*/
 
 class Stack {
     constructor() {
@@ -31,6 +36,10 @@ class Stack {
     isEmpty() {
         return this.size === 0;
     }
+
+    printStack() {
+        return this.stack.map((e) => console.log(e))
+    }
 }
 
 const stack1 = new Stack();
@@ -42,6 +51,7 @@ stack1.push(78);
 console.log(stack1.peek());
 console.log(stack1.pop());
 console.log(stack1);
+stack1.printStack();
 
 //Given a input string s, reverse a order of words
 const reverseString = (str) => {
