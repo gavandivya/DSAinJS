@@ -5,7 +5,6 @@ peek()
 push(ele)
 isEmpty()
 */
-
 class Stack {
     constructor() {
         this.stack = [];
