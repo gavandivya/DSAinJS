@@ -27,7 +27,7 @@ const string2 = `Hiee ${user}
 How are you`;
 console.log`hieee! How are you ${user} I hope u are good`; // ['hieee! How are you','I hope u are good'],'divya'
 
-// length
+//length
 console.log(string.length); //3
 
 //accessing char
