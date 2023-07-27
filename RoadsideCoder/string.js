@@ -109,7 +109,7 @@ function truncate(str, max) {
 
 console.log(truncate("How are u,I hope u are great", 9));
 
-//Q2 Palindrome Number 121 -> true, 10 -> false
+//Q2 - Palindrome Number 121 -> true, 10 -> false
 
 function isPalindrome(num) {
   return num < 0 ? false : num === +num.toString().split("").reverse().join("");
