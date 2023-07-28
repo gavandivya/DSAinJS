@@ -118,7 +118,7 @@ function isPalindrome(num) {
 console.log(isPalindrome(123)); //123 - "123" - ['1','2','3'] - ['3','2','1'] - 321
 console.log(isPalindrome(101)); //101 - "101" - ['1','0','1'] - ['1','0','1'] - 101
 
-//Q3 Hamming distance  - Find distance between 2 string
+//Q3 - Hamming distance  - Find distance between 2 string
 
 //String should be of same length then only we can find out
 
