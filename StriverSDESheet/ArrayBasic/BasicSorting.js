@@ -121,6 +121,7 @@ const InsertionSort = (arr) => {
             }
         }
     }
+    
     //way2
     for (let i = 0; i <= n - 1; i++) {
         let j = i;
