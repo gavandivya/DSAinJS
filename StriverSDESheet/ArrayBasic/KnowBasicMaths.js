@@ -67,9 +67,9 @@ var reverse = function (x) {
 // Check Palindrome
 const isPalindrome = (num) => {
     if (num === reverseNumber(num)) {
-        return "Palindrome"
+        return "Palindrome Number"
     }
-    return "Not a palindrome number"
+    return "Not a Palindrome Number"
 }
 console.log(isPalindrome(101));
 console.log(isPalindrome(1234));
