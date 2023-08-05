@@ -19,8 +19,6 @@ split()
 localeCompare()
 */ 
 
-// Implementation Starts
-
 //Initializing string
 const string = new String("Hie");
 const string1 = "Hiee";
