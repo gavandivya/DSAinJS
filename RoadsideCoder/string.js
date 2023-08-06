@@ -38,17 +38,16 @@ console.log(string.charAt(4)); // return empty string if not present
 console.log(string.charAt(2)); // e
 
 //loop
-
 for (let i = 0; i < string.length; i++) {
     console.log(string[i]);    
 }
 
-//Modifying string
+//modifying string
 string[3] = "b"; //can't modify becaz imutable
 console.log(string.replace('i','a')); //Hie-> Hae  only first instance is replaced
 console.log(string.replaceAll('i','a')); //Hie-> Hae  all instance is replaced
 
-//Concat
+//concat
 const newStr = string.concat(" I hope u dng great!")
 console.log(newStr); //Hie I hope u dng great!
 
