@@ -1,5 +1,4 @@
 // String methods and leetcode questions
-//Methods
 /*
 replace()
 replaceAll()
@@ -216,5 +215,4 @@ const isAnagram = (str1,str2)=>{
 console.log(isAnagram("rat","tar"));
 console.log(isAnagram("car","tar"));
 console.log(isAnagram("anagram","nagaram"));
-
 
