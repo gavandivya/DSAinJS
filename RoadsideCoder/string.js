@@ -181,7 +181,7 @@ function hamingNum(num1,num2){
 console.log(hamingNum(2,9))
  
 
-//Valid Anagram 1st approach
+//Q4 Valid Anagram 1st approach
 const isAnagram1 = (str1,str2)=>{
     str1 = str1.split("").sort().join(""); 
     str2 = str2.split("").sort().join(""); 
@@ -216,4 +216,5 @@ const isAnagram = (str1,str2)=>{
 console.log(isAnagram("rat","tar"));
 console.log(isAnagram("car","tar"));
 console.log(isAnagram("anagram","nagaram"));
+
 
