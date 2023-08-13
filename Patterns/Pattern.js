@@ -304,3 +304,51 @@ function pattern41(n) {
  */
 
 pattern9(5);
+
+
+// empty diamond
+function pattern01(n) {
+let string = "";
+for(let i = 0; i<n;i++){
+    string = " "
+    for(let j =0;j<n-i;j++){
+    string = string +"* "
+    }
+    for(let j =0;j<=2*i;j++){
+    string = string +"  "
+    }
+    for(let j =0;j<n-i;j++){
+    string = string +"* "
+    }
+    console.log(string);
+}
+  for(let i = 0; i<n;i++){
+    string = " "
+    for(let j =0;j<i+1;j++){
+    string = string +"* "
+    }
+    for(let j =0;j<2*n-2*i-1;j++){
+    string = string +"  "
+    }
+    for(let j =0;j<i+1;j++){
+    string = string +"* "
+    }
+    console.log(string);
+}
+}
+
+pattern01(5)
+/** Output 
+
+ * * * * *   * * * * * 
+ * * * *       * * * * 
+ * * *           * * * 
+ * *               * * 
+ *                   * 
+ *                   * 
+ * *               * * 
+ * * *           * * * 
+ * * * *       * * * * 
+ * * * * *   * * * * * 
+**/
+
