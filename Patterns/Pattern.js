@@ -397,3 +397,37 @@ pattern02(5);
  
 **/
  
+//solid half diamond
+function pattern03(n) {
+let string = "";
+for(let i = 0; i<n;i++){
+    string = " "
+    for(let j =0;j<i+1;j++){
+    string = string +"* "
+    }
+    console.log(string);
+}
+for(let i = 0; i<n-1;i++){
+    string = " "
+    for(let j =0;j<n-i-1;j++){
+    string = string +"* "
+    }
+    console.log(string);
+}
+}
+
+pattern03(5);
+
+/** Output 
+ * 
+ * * 
+ * * * 
+ * * * * 
+ * * * * * 
+ * * * * 
+ * * * 
+ * * 
+ * 
+ **/
+ 
+
