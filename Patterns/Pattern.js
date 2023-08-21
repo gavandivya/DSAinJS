@@ -474,3 +474,38 @@ pattern04(5);
            1234321
           123454321
 **/
+
+
+function pattern05(n) {
+    let string = "";
+    for(let i = 0; i<n;i++){
+        string = " "
+        for(let j =0;j<n-i;j++){
+          if(j == 0 ){
+          string = string + (i+1)
+          }
+          else if( j == n-i-1){
+          string = string + 5
+          }
+          else if( i == 0){
+          string = string + (j+1)
+          }
+          else{
+          string = string +" "
+          }
+        }
+    
+        console.log(string);
+    }
+    }
+    
+    pattern05(5);
+    
+    /** Output 
+     12345
+     2  5
+     3 5
+     45
+     5
+     **/
+     
