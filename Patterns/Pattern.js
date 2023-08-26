@@ -551,33 +551,31 @@ patternButterfly(4);
 **/
 
 function pattern06() {
-    let string = "";
-    let row = 5;
-    let col = 17
-    for(let i = 0; i<row;i++){
-        string = " "
-        for(let j =0;j<=(col/2-1)-i;j++){
-        string = string +"*"
-        }
-        for(let j =0;j<=2*i;j++){
-          if(j %2 == 0){
-          string = string +(i+1)
-          }
-          else{
-          string = string +"*"
-          }
-        }
-        for(let j =0;j<=(col/2-1)-i;j++){
-        string = string +"*"
-        }
-    
-        console.log(string);
+  let string = "";
+  let row = 5;
+  let col = 17;
+  for (let i = 0; i < row; i++) {
+    string = " ";
+    for (let j = 0; j <= col / 2 - 1 - i; j++) {
+      string = string + "*";
     }
+    for (let j = 0; j <= 2 * i; j++) {
+      if (j % 2 == 0) {
+        string = string + (i + 1);
+      } else {
+        string = string + "*";
+      }
     }
-    pattern06();
-    
-    
-    /** Output 
+    for (let j = 0; j <= col / 2 - 1 - i; j++) {
+      string = string + "*";
+    }
+
+    console.log(string);
+  }
+}
+pattern06();
+
+/** Output 
      
      ********1********
      *******2*2*******
