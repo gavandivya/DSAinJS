@@ -505,6 +505,7 @@ pattern05(5);
      5
      **/
 
+console.log("----------------------------");
 //ButterFly
 function patternButterfly(n) {
   let string = "";
@@ -538,6 +539,7 @@ function patternButterfly(n) {
   }
 }
 patternButterfly(4);
+
 /** Output 
         
 *             * 
@@ -549,7 +551,7 @@ patternButterfly(4);
 * *         * * 
 *             * 
 **/
-
+console.log("----------------------------");
 function pattern06() {
   let string = "";
   let row = 5;
