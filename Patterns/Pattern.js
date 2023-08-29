@@ -474,7 +474,7 @@ pattern04(5);
            1234321
           123454321
 **/
-
+console.log("----------------------------");
 function pattern05(n) {
   let string = "";
   for (let i = 0; i < n; i++) {
