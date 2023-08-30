@@ -435,6 +435,7 @@ function patternFloydTriangle(n) {
   }
 }
 patternFloydTriangle(8);
+console.log("----------------------------");
 
 /** Output 
     
