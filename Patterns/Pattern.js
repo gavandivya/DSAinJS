@@ -408,6 +408,7 @@ function pattern03(n) {
 }
 
 pattern03(5);
+console.log("----------------------------");
 
 /** Output
  *
