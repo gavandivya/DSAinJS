@@ -589,3 +589,58 @@ pattern06();
 ****5*5*5*5*5****
 
  **/
+
+console.log("----------------------------");
+function pattern07(n) {
+let string = "";
+for (let i = 0; i < n; i++) {
+    string = " ";
+    for (let j = 0; j < n-i; j++) {
+       string = string+"  "
+    }
+    for (let j = 0; j <= 2*i; j++) {
+        if(j == 0 || j == 2*i){
+            string = string+"* "
+        }
+        else{
+            string = string+"  "
+        }
+     }
+     for (let j = 0; j < n-i; j++) {
+        string = string+"  "
+     }
+    console.log(string);
+    }
+    n = n-1;
+    for (let i = 0; i < n; i++) {
+        string = " ";
+        for (let j = 0; j <= i+1; j++) {
+           string = string+"  "
+        }
+        for (let j = 0; j <= (2*n) - (2*i)-2; j++) {
+            if(j == 0 || j == (2*n) - (2*i)-2){
+                string = string+"* "
+            }
+            else{
+                string = string+"  "
+            }
+         }
+         for (let j = 0; j <= i; j++) {
+            string = string+"  "
+         }
+        console.log(string);
+    }
+}
+
+pattern07(5);
+/**
+           *           
+         *   *         
+       *       *       
+     *           *     
+   *               *   
+     *           *   
+       *       *     
+         *   *       
+           *       
+ */
