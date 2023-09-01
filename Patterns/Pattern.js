@@ -451,6 +451,7 @@ console.log("----------------------------");
      
      **/
 
+//Palindrome Equilateral
 function pattern04(n) {
   let string = "";
   for (let i = 0; i < n; i++) {
