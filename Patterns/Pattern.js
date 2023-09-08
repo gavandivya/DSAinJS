@@ -8,6 +8,9 @@ function pattern1(n) {
   }
   console.log(string);
 }
+pattern1(5);
+console.log("-------------------------");
+
 
 /* Output
  *****
@@ -26,6 +29,9 @@ function pattern2(n) {
   }
   console.log(string);
 }
+pattern2(5);
+console.log("-------------------------");
+
 
 /* Output
  *
@@ -45,6 +51,10 @@ function pattern3(n) {
   }
   console.log(string);
 }
+pattern3(5);
+console.log("-------------------------");
+
+
 
 /* Output
     *****
@@ -77,6 +87,7 @@ function pattern4(n) {
   }
   console.log(string);
 }
+pattern4(4)
 
 /* Output
 1 
@@ -85,7 +96,7 @@ function pattern4(n) {
 1 2 3 4 
 1 2 3 4 5 
 */
-
+console.log("-------------------------");
 function pattern5(n) {
   for (let row = 1; row < 2 * n; row++) {
     if (row <= n) {
@@ -102,6 +113,8 @@ function pattern5(n) {
   }
   console.log(string);
 }
+pattern5(5);
+console.log("-------------------------");
 
 function pattern6(n) {
   for (let row = 1; row <= n; row++) {
@@ -118,6 +131,8 @@ function pattern6(n) {
   console.log(string);
 }
 
+pattern6(5)
+
 /**
  *
  * Output
@@ -127,7 +142,8 @@ function pattern6(n) {
  ****
  *****
  */
-
+ console.log("-------------------------");
+ 
 function pattern7(n) {
   for (let row = 1; row <= n; row++) {
     for (let col = 0; col < row; col++) {
@@ -144,6 +160,7 @@ function pattern7(n) {
   }
   console.log(string);
 }
+pattern7(5);
 
 /** Output
  ****
@@ -151,6 +168,7 @@ function pattern7(n) {
  **
  *
  */
+ console.log("-------------------------");
 
 function pattern8(n) {
   for (let row = 1; row <= n; row++) {
@@ -169,6 +187,8 @@ function pattern8(n) {
   }
   console.log(string);
 }
+pattern8(5);
+console.log("-------------------------");
 
 /**
  * Output
@@ -179,7 +199,6 @@ function pattern8(n) {
  *********
  *
  */
-
 function pattern9(n) {
   for (let row = 1; row <= n; row++) {
     for (col = 1; col <= row - 1; col++) {
@@ -198,6 +217,8 @@ function pattern9(n) {
   console.log(string);
 }
 
+pattern9(5);
+console.log("-------------------------");
 /**
  * Output
  **********
@@ -221,6 +242,9 @@ function pattern10(n) {
   }
   console.log(string);
 }
+pattern10(4);
+console.log("-------------------------");
+
 
 /**
  * Output
@@ -248,6 +272,9 @@ function pattern11(n) {
   }
   console.log(string);
 }
+pattern11(4)
+console.log("----------------------------");
+
 
 /**
  * Output
@@ -267,6 +294,9 @@ function pattern40(n) {
   }
   console.log(string);
 }
+pattern40(4);
+console.log("----------------------------");
+
 
 /* Output 
 11111
@@ -296,6 +326,8 @@ function pattern41(n) {
  */
 
 pattern9(5);
+console.log("----------------------------");
+
 
 // empty diamond
 function pattern01(n) {
@@ -329,6 +361,8 @@ function pattern01(n) {
 }
 
 pattern01(5);
+console.log("----------------------------");
+
 /** Output 
 
  * * * * *   * * * * * 
@@ -374,6 +408,8 @@ function pattern02(n) {
   }
 }
 pattern02(5);
+console.log("----------------------------");
+
 /** Output 
  * * * * * * * * * * 
  * * * *     * * * * 
