@@ -28,7 +28,7 @@ const linearSearchIntwoDArray = (target) => {
 
 console.log(linearSearchIntwoDArray(8));
 
-//linear search in 2DArray
+//max in 2DArray
 const maxIntwoDArray = () => {
     let max = 0;
     for (let i = 0; i < twoDarray.length; i++) {
