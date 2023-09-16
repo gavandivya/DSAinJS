@@ -20,7 +20,6 @@ const linearSearchIntwoDArray = (target) => {
     for (let i = 0; i < twoDarray.length; i++) {
         for (let j = 0; j < twoDarray[i].length; j++) {
             if(twoDarray[i][j] == target)
-            // console.log('[' + i + ',' + j + '] = ' + twoDarray[i][j]);
             return `Found at ${i} ${j}`;
         }
     }
