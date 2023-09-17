@@ -1,3 +1,5 @@
+// For two sum using two pointer approach array needs to be sorted
+
 const twoSum = (arr,target) =>{
     let left = 0;
     let right = arr.length-1;
@@ -19,3 +21,4 @@ const twoSum = (arr,target) =>{
 }
 
 twoSum([1,4,7,9,12,14],19);
+//Output - 7 12
