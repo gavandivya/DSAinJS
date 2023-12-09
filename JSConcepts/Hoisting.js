@@ -20,7 +20,7 @@ function test2() {
 test2();
 /**
  * Output - Error - Uncaught ReferenceError ReferenceError: Cannot access 'a' before initialization
- -----------------------------------------------------*/
+ --------------------------------------------*/
 
 //Referring questions from  - https://js.swapnadeep.com/docs/hoisting/
 function test3() {}
