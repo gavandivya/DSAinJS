@@ -1,7 +1,7 @@
 function test1() {
-    console.log(a);
-    var a = 10;
-    console.log(a);
+  console.log(a);
+  var a = 10;
+  console.log(a);
 }
 
 test1();
@@ -13,8 +13,8 @@ test1();
 
 let a = 1;
 function test2() {
-    //console.log(a);
-    let a = 2;
+  //console.log(a);
+  let a = 2;
 }
 
 test2();
@@ -23,13 +23,9 @@ test2();
  -----------------------------------------------------*/
 
 //Referring questions from  - https://js.swapnadeep.com/docs/hoisting/
-function test3() {
-
-}
-
+function test3() {}
 
 test3();
-
 
 console.log(foo);
 var foo = "foo";
@@ -39,12 +35,10 @@ console.log(foo);
 foo = "foo";
 //Output - undefined
 
-
 //q1
 console.log(foo); // undefined
 var foo = "foo";
 console.log(foo); // foo
-
 
 //q2
 console.log(foo); // ReferenceError: foo is not defined
@@ -52,21 +46,19 @@ console.log(typeof foo); // Output: undefined
 foo = "foo";
 console.log(foo); // foo
 
-
 //q3
 function foo() {
-    console.log(foo); // undefined
-    var foo = "foo";
+  console.log(foo); // undefined
+  var foo = "foo";
 }
 
 foo();
 
-
 //q4
 var foo = "bar";
 function greet() {
-    console.log(foo); // undefined
-    var foo = "foo";
+  console.log(foo); // undefined
+  var foo = "foo";
 }
 
 greet();
@@ -74,20 +66,20 @@ greet();
 //q5
 foo(); // Hello
 function foo() {
-    console.log("Hello");
+  console.log("Hello");
 }
 
 //q6
 foo(); // TypeError: foo is not a function
 var foo = function foo() {
-    console.log("Hello");
+  console.log("Hello");
 };
 //output - acts as a variable
 
 //q7
 function foo() {
-    a = 100; // variable declared without let n var keyword becomes global
-    var b = 200;
+  a = 100; // variable declared without let n var keyword becomes global
+  var b = 200;
 }
 
 foo();
@@ -96,8 +88,8 @@ console.log(b);
 
 //q8
 function foo() {
-    console.log(a); // ReferenceError: a is not defined
-    a = 100;
+  console.log(a); // ReferenceError: a is not defined
+  a = 100;
 }
 
 foo();
@@ -105,8 +97,8 @@ foo();
 //q9
 var ab = 100;
 function foo() {
-    console.log(ab); // 100
-    ab = 200;
+  console.log(ab); // 100
+  ab = 200;
 }
 
 foo();
@@ -114,30 +106,27 @@ foo();
 //q10
 var ab = 100;
 function foo() {
-    console.log(ab); // undefined
-    var ab = 200;
+  console.log(ab); // undefined
+  var ab = 200;
 }
 
 foo();
 
-
 //q11
 function foo() {
-    console.log("Hey");
+  console.log("Hey");
 }
 
 foo(); // Hello
 
 function foo() {
-    console.log("Hello");
+  console.log("Hello");
 }
 
 //q12
-
 console.log(typeof foo); // function as function are hoited first than variable
 function foo() {
-    return "bar";
+  return "bar";
 }
 
 var foo = "bar";
-
