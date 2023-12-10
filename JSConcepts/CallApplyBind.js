@@ -25,7 +25,7 @@ invite2("Hello from Bind", "How are u?");
 ----------------------------------
 
 
-    function Car(type, fuelType){
+function Car(type, fuelType){
 	this.type = type;
 	this.fuelType = fuelType;
 }
