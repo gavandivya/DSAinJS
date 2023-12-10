@@ -22,6 +22,37 @@ var invite2 = invite.bind(emp2);
 invite1("Hello from Bind", "How are u?");
 invite2("Hello from Bind", "How are u?");
 
+
+-------------------------------------------------------------
+
+const person1 = {
+  firstName: 'Divya',
+  lastName: 'Gavandi',
+  fullName: function() {
+      return `${this.firstName} ${this.lastName}`}
+}
+const person2 = {
+  firstName: 'Disha',
+  lastName: 'Parab'
+}
+
+//Bind - .bind(): Creates a new function with a specified "this" value and allows you to use it later with that context.
+const person2Name = person1.fullName.bind(person2);
+console.log(sayPerson2Name()) // Disha Parab
+
+
+//Call - .call(): Invokes a function with a specified "this" value and individual arguments.
+
+console.log(person1.fullname.call(person2));
+
+//Apply - .apply(): Similar to .call(), but it takes an array of arguments.
+
+fullName: function(city, country) {
+      return `${this. firstName} ${this.lastName}, ${city}, ${country}`}
+}
+
+console.log(person1.fullName.apply(person2, ["Mumbai", "India"]));
+
 //Currying
 
 /**
