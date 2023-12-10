@@ -10,10 +10,18 @@ function invite(greeting1, greeting2) {
 invite.call(emp1, "Hello from Call", "How are u?");
 invite.call(emp2, "Hi from Call", "How are u?");
 
+//Output - Hello from Call Divya Gavandi, How are u?
+//Output - Hello from Call Disha Gavandi, How are u?
+
 //Apply
 invite.apply(emp1, ["Hello from Apply", "How are u?"]);
 invite.apply(emp2, ["Heyyy from Apply", "How are u?"]);
 
+
+//Output - Hello from Apply Divya Gavandi, How are u?
+//Output - Heyyy from Apply Disha Gavandi, How are u?
+
+//Array of values will be mapped to the parameters
 
 //Bind
 var invite1 = invite.bind(emp1);
