@@ -1,4 +1,3 @@
-
 var emp1 = { fname: "Divya", lname: "Gavandi" };
 var emp2 = { fname: "Disha", lname: "Gavandi" };
 
@@ -10,18 +9,10 @@ function invite(greeting1, greeting2) {
 invite.call(emp1, "Hello from Call", "How are u?");
 invite.call(emp2, "Hi from Call", "How are u?");
 
-//Output - Hello from Call Divya Gavandi, How are u?
-//Output - Hello from Call Disha Gavandi, How are u?
-
 //Apply
 invite.apply(emp1, ["Hello from Apply", "How are u?"]);
 invite.apply(emp2, ["Heyyy from Apply", "How are u?"]);
 
-
-//Output - Hello from Apply Divya Gavandi, How are u?
-//Output - Heyyy from Apply Disha Gavandi, How are u?
-
-//Array of values will be mapped to the parameters
 
 //Bind
 var invite1 = invite.bind(emp1);
@@ -31,35 +22,33 @@ invite1("Hello from Bind", "How are u?");
 invite2("Hello from Bind", "How are u?");
 
 
--------------------------------------------------------------
+----------------------------------
 
-const person1 = {
-  firstName: 'Divya',
-  lastName: 'Gavandi',
-  fullName: function() {
-      return `${this.firstName} ${this.lastName}`}
-}
-const person2 = {
-  firstName: 'Disha',
-  lastName: 'Parab'
+
+    function Car(type, fuelType){
+	this.type = type;
+	this.fuelType = fuelType;
 }
 
-//Bind - .bind(): Creates a new function with a specified "this" value and allows you to use it later with that context.
-const person2Name = person1.fullName.bind(person2);
-console.log(sayPerson2Name()) // Disha Parab
-
-
-//Call - .call(): Invokes a function with a specified "this" value and individual arguments.
-
-console.log(person1.fullname.call(person2));
-
-//Apply - .apply(): Similar to .call(), but it takes an array of arguments.
-
-fullName: function(city, country) {
-      return `${this. firstName} ${this.lastName}, ${city}, ${country}`}
+function setBrand(brand){
+	Car.call(this, "convertible", "petrol");
+	this.brand = brand;
+	console.log(`Car details = `, this);
 }
 
-console.log(person1.fullName.apply(person2, ["Mumbai", "India"]));
+function definePrice(price){
+	Car.call(this, "convertible", "diesel");
+	this.price = price;
+	console.log(`Car details = `, this);
+}
+
+const newBrand = new setBrand('Brand1');
+const newCarPrice = new definePrice(100000);
+
+//setBrand {type: 'convertible', fuelType: 'petrol', brand: 'Brand1'}
+//definePrice {type: 'convertible', fuelType: 'diesel', price: 100000}
+
+---------------------------------------------------------------------------------
 
 //Currying
 
