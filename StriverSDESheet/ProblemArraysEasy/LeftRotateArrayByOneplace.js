@@ -59,3 +59,16 @@ const rotateByNReverse = (array, d) => {
 }
 console.log(rotateByNReverse(arr, 3));
 //Time complexity: O(n). Space complexity: O(1).
+
+
+
+//way5
+
+const rotateByModulus = (d) => {
+    if (d > n) {
+        d = d % n;
+    }
+    
+}
+
+console.log(rotateByModulus(3));

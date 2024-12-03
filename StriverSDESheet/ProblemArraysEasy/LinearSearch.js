@@ -10,4 +10,4 @@ const linearSearch = (array, k) => {
 }
 
 console.log(linearSearch(arr, 6));
-//Time Complexity: O(n), Space Complexity: O(1)
+//Time Complexity: O(n), Space Complexity: O(1).
