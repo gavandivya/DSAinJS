@@ -1,4 +1,3 @@
-
 var emp1 = { fname: "Divya", lname: "Gavandi" };
 var emp2 = { fname: "Disha", lname: "Gavandi" };
 
@@ -21,6 +20,35 @@ var invite2 = invite.bind(emp2);
 
 invite1("Hello from Bind", "How are u?");
 invite2("Hello from Bind", "How are u?");
+
+
+----------------------------------
+
+
+function Car(type, fuelType){
+	this.type = type;
+	this.fuelType = fuelType;
+}
+
+function setBrand(brand){
+	Car.call(this, "convertible", "petrol");
+	this.brand = brand;
+	console.log(`Car details = `, this);
+}
+
+function definePrice(price){
+	Car.call(this, "convertible", "diesel");
+	this.price = price;
+	console.log(`Car details = `, this);
+}
+
+const newBrand = new setBrand('Brand1');
+const newCarPrice = new definePrice(100000);
+
+//setBrand {type: 'convertible', fuelType: 'petrol', brand: 'Brand1'}
+//definePrice {type: 'convertible', fuelType: 'diesel', price: 100000}
+
+---------------------------------------------------------------------------------
 
 //Currying
 
