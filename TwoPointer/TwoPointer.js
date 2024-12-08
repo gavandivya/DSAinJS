@@ -1,5 +1,4 @@
 // For two sum using two pointer approach array needs to be sorted
-
 const twoSum = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
